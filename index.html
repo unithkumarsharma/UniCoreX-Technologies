@@ -1362,14 +1362,18 @@ async function optimize() {
             </div>
             <div class="form-group">
               <label class="form-label">Budget Range</label>
-              <select class="form-select">
+              <select class="form-select" id="contact-budget-select">
                 <option value="">Select budget</option>
-                <option>₹50K — ₹2L</option>
-                <option>₹2L — ₹5L</option>
-                <option>₹5L — ₹15L</option>
-                <option>₹15L — ₹50L</option>
-                <option>₹50L+</option>
+                <option value="₹50K — ₹2L">₹50K — ₹2L</option>
+                <option value="₹2L — ₹5L">₹2L — ₹5L</option>
+                <option value="₹5L — ₹15L">₹5L — ₹15L</option>
+                <option value="₹15L — ₹50L">₹15L — ₹50L</option>
+                <option value="₹50L+">₹50L+</option>
+                <option value="custom">Custom (Specify Amount)</option>
               </select>
+              <div id="custom-budget-container" style="display: none; margin-top: var(--space-sm);">
+                <input type="text" id="custom-budget-input" class="form-input" placeholder="Enter amount (e.g. ₹8L or Rs. 10 Lakhs)" />
+              </div>
             </div>
           </div>
           <div class="form-group">

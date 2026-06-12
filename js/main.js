@@ -120,6 +120,28 @@ function initContactForm() {
   const successMsg = document.querySelector('.form-success');
 
   if (form) {
+    const budgetSelect = document.getElementById('contact-budget-select');
+    const customBudgetContainer = document.getElementById('custom-budget-container');
+    const customBudgetInput = document.getElementById('custom-budget-input');
+
+    if (budgetSelect && customBudgetContainer) {
+      budgetSelect.addEventListener('change', () => {
+        if (budgetSelect.value === 'custom') {
+          customBudgetContainer.style.display = 'block';
+          if (customBudgetInput) {
+            customBudgetInput.required = true;
+            customBudgetInput.focus();
+          }
+        } else {
+          customBudgetContainer.style.display = 'none';
+          if (customBudgetInput) {
+            customBudgetInput.required = false;
+            customBudgetInput.value = '';
+          }
+        }
+      });
+    }
+
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       form.style.display = 'none';
@@ -130,6 +152,9 @@ function initContactForm() {
       setTimeout(() => {
         form.style.display = '';
         form.reset();
+        if (customBudgetContainer) {
+          customBudgetContainer.style.display = 'none';
+        }
         if (successMsg) {
           successMsg.classList.remove('active');
         }
