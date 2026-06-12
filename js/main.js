@@ -6,6 +6,7 @@ import Lenis from 'lenis';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import confetti from 'canvas-confetti';
+import { inject } from '@vercel/analytics';
 
 import { initNavigation } from './navigation.js';
 import { initAnimations } from './animations.js';
@@ -18,6 +19,9 @@ import { initSpotlight } from './spotlight.js';
 import { init3DTilt } from './tilt.js';
 
 gsap.registerPlugin(ScrollTrigger);
+
+// Initialize Vercel Web Analytics
+inject();
 
 // Initialize Lenis Smooth Scroll
 function initSmoothScroll() {
