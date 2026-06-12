@@ -1,0 +1,104 @@
+/* ============================================
+   UniCoreX Technologies — Responsive v2
+   ============================================ */
+
+/* ---- Large Desktop (1440px+) ---- */
+@media (min-width: 1440px) {
+  .container { padding: 0 var(--space-3xl); }
+}
+
+/* ---- Desktop / Tablet Landscape ---- */
+@media (max-width: 1024px) {
+  .nav-links { display: none; }
+  .nav-cta .btn { display: none; }
+  .nav-menu-btn { display: flex; }
+
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .industries-grid { grid-template-columns: repeat(3, 1fr); }
+  .trust-pillars { grid-template-columns: repeat(2, 1fr); }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
+  .blog-grid { grid-template-columns: repeat(2, 1fr); }
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+  .careers-content { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: repeat(3, 1fr); }
+
+  .hero-float-icons { display: none; }
+  .hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+  .hero-stats { gap: var(--space-xl); }
+}
+
+/* ---- Tablet Portrait ---- */
+@media (max-width: 768px) {
+  :root {
+    --space-section: clamp(3rem, 8vw, 5rem);
+    --nav-height: 70px;
+  }
+
+  .container { padding: 0 var(--space-lg); }
+
+  .services-grid { grid-template-columns: 1fr; }
+  .industries-grid { grid-template-columns: repeat(2, 1fr); }
+  .trust-pillars { grid-template-columns: 1fr 1fr; }
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+  .portfolio-grid { grid-template-columns: 1fr; }
+  .blog-grid { grid-template-columns: 1fr; }
+  .why-grid { grid-template-columns: 1fr; }
+  .careers-benefits { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+
+  .hero-buttons { flex-direction: column; }
+  .hero-stats {
+    flex-wrap: wrap;
+    gap: var(--space-xl);
+  }
+
+  .portfolio-filters { justify-content: flex-start; overflow-x: auto; flex-wrap: nowrap; padding-bottom: var(--space-sm); }
+  .tech-tabs { justify-content: flex-start; overflow-x: auto; flex-wrap: nowrap; padding-bottom: var(--space-sm); }
+
+  .calc-project-types { grid-template-columns: 1fr 1fr; }
+
+  .testimonial-card { padding: var(--space-2xl); }
+
+  .chat-window { width: 320px; bottom: 60px; right: -10px; }
+
+  .section-header { margin-bottom: var(--space-2xl); }
+}
+
+/* ---- Mobile ---- */
+@media (max-width: 480px) {
+  :root { --space-section: clamp(2.5rem, 6vw, 4rem); }
+
+  .container { padding: 0 var(--space-md); }
+
+  .hero h1 { font-size: clamp(1.8rem, 8vw, 2.5rem); }
+  .hero-stats { flex-direction: column; gap: var(--space-lg); }
+
+  .industries-grid { grid-template-columns: 1fr 1fr; }
+  .trust-pillars { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+
+  .calc-project-types { grid-template-columns: 1fr; }
+
+  .chat-window {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  .whatsapp-float { width: 52px; height: 52px; bottom: 20px; right: 20px; }
+  .chat-widget { bottom: 80px; right: 20px; }
+  .chat-toggle { width: 48px; height: 48px; }
+
+  .btn { padding: 12px 24px; font-size: var(--fs-xs); }
+  .btn-lg { padding: 14px 28px; font-size: var(--fs-small); }
+
+  .footer-bottom { flex-direction: column; gap: var(--space-sm); text-align: center; }
+}

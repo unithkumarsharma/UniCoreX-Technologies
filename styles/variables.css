@@ -1,0 +1,181 @@
+/* ============================================
+   UniCoreX Technologies — Design Tokens v2
+   Redesigned: Violet/Cyan Gradient Theme
+   ============================================ */
+
+:root {
+  --bg-color:        rgba(3, 1, 8, 0.45); /* Deep Obsidian Black (Transparent Overlay) */
+  --text-color:      #94A3B8; /* Slate Light */
+  --heading-color:   #FFFFFF; /* White */
+  --paragraph-color: #64748B; /* Muted Slate */
+  --border-color:    rgba(255, 255, 255, 0.06);
+  --border-color-muted: rgba(255, 255, 255, 0.03);
+
+  /* ---- Colors ---- */
+  --black:          #030108; /* Darkest Obsidian */
+  --black-light:    rgba(6, 4, 14, 0.5);
+  --black-card:     rgba(11, 8, 22, 0.72);
+  --graphite:       rgba(16, 12, 34, 0.55);
+  --graphite-mid:   #161130;
+  --graphite-light: #201844;
+
+  /* Primary Brand — Electric Purple & Indigo */
+  --violet:         #7C3AED; /* Electric Purple */
+  --violet-light:   #A78BFA;
+  --violet-dark:    #5B21B6;
+  --cyan:           #06B6D4; /* Vibrant Cyan */
+  --cyan-light:     #67E8F9;
+  --cyan-dark:      #0891B2;
+  --magenta:        #D946EF; /* Glowing Magenta */
+  --magenta-light:  #F5d0FE;
+  --magenta-dark:   #A21CAF;
+
+  /* Accent — Coral Pink */
+  --coral:          #FF4D80; /* Premium Coral Pink */
+  --coral-light:    #FF80A3;
+  --rose:           #EC4899; /* Neon Rose */
+
+  /* Gradient shortcuts */
+  --gradient-primary:  linear-gradient(135deg, var(--violet), var(--cyan));
+  --gradient-warm:     linear-gradient(135deg, var(--magenta), var(--coral));
+  --gradient-cool:     linear-gradient(135deg, var(--cyan), var(--violet));
+  --gradient-text:     linear-gradient(135deg, var(--violet-light) 0%, var(--cyan-light) 50%, var(--magenta-light) 100%);
+  --gradient-glow:     linear-gradient(135deg, rgba(124,58,237,0.08), rgba(6,182,212,0.08));
+  --gradient-border:   linear-gradient(135deg, var(--violet), var(--cyan), var(--magenta));
+
+  /* Glow */
+  --glow-violet:     rgba(124, 58, 237, 0.18);
+  --glow-cyan:       rgba(6, 182, 212, 0.15);
+  --glow-magenta:    rgba(225, 29, 72, 0.15);
+  --glow-strong:     rgba(124, 58, 237, 0.3);
+
+  /* Neutrals */
+  --white:           #FFFFFF;
+  --white-90:        rgba(255, 255, 255, 0.9);
+  --white-70:        rgba(255, 255, 255, 0.7);
+  --white-50:        rgba(255, 255, 255, 0.5);
+  --white-30:        rgba(255, 255, 255, 0.3);
+  --white-10:        rgba(255, 255, 255, 0.1);
+  --white-05:        rgba(255, 255, 255, 0.05);
+
+  --success:         #10B981;
+  --error:           #EF4444;
+
+  /* ---- Typography ---- */
+  --font-heading:    'Space Grotesk', sans-serif;
+  --font-body:       'Plus Jakarta Sans', sans-serif;
+
+  --fs-display:      clamp(2.2rem, 4.6vw, 4.0rem);
+  --fs-h1:           clamp(2rem, 4vw, 3.5rem);
+  --fs-h2:           clamp(1.75rem, 3vw, 2.75rem);
+  --fs-h3:           clamp(1.25rem, 2vw, 1.75rem);
+  --fs-h4:           clamp(1.1rem, 1.5vw, 1.35rem);
+  --fs-body:         1rem;
+  --fs-body-lg:      1.125rem;
+  --fs-small:        0.875rem;
+  --fs-xs:           0.75rem;
+
+  --fw-regular:      400;
+  --fw-medium:       500;
+  --fw-semibold:     600;
+  --fw-bold:         700;
+  --fw-extrabold:    800;
+
+  --lh-tight:        1.2;
+  --lh-normal:       1.6;
+  --lh-relaxed:      1.8;
+
+  --ls-tight:        -0.03em;
+  --ls-normal:       0;
+  --ls-wide:         0.05em;
+  --ls-wider:        0.1em;
+  --ls-widest:       0.2em;
+
+  /* ---- Spacing ---- */
+  --space-xs:        0.25rem;
+  --space-sm:        0.5rem;
+  --space-md:        1rem;
+  --space-lg:        1.5rem;
+  --space-xl:        2rem;
+  --space-2xl:       3rem;
+  --space-3xl:       4rem;
+  --space-4xl:       6rem;
+  --space-5xl:       8rem;
+  --space-section:   clamp(5rem, 10vw, 8rem);
+
+  /* ---- Layout ---- */
+  --max-width:       1200px;
+  --max-width-wide:  1400px;
+  --nav-height:      80px;
+
+  /* ---- Border Radius ---- */
+  --radius-sm:       8px;
+  --radius-md:       14px;
+  --radius-lg:       20px;
+  --radius-xl:       28px;
+  --radius-pill:     9999px;
+
+  /* ---- Shadows ---- */
+  --shadow-sm:       0 2px 10px rgba(0,0,0,0.6);
+  --shadow-md:       0 4px 24px rgba(0,0,0,0.7);
+  --shadow-lg:       0 8px 48px rgba(0,0,0,0.8);
+  --shadow-violet:   0 4px 30px rgba(124, 58, 237, 0.15);
+  --shadow-violet-lg:0 8px 60px rgba(124, 58, 237, 0.25);
+  --shadow-cyan:     0 4px 30px rgba(6, 182, 212, 0.12);
+  --shadow-glow:     0 0 40px rgba(124, 58, 237, 0.15), 0 0 80px rgba(6, 182, 212, 0.1);
+  --glow-strength-lg:0 0 60px rgba(124, 58, 237, 0.3), 0 0 120px rgba(6, 182, 212, 0.18);
+  --btn-inset-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  --card-inner-glow: inset 0 1px 1px rgba(255, 255, 255, 0.03);
+
+  /* ---- Glassmorphism ---- */
+  --glass-bg:        rgba(10, 8, 20, 0.45);
+  --glass-bg-light:  rgba(15, 12, 30, 0.55);
+  --glass-bg-hover:  rgba(20, 16, 40, 0.65);
+  --glass-border:    rgba(255, 255, 255, 0.06);
+  --glass-blur:      blur(24px);
+
+  /* ---- Transitions ---- */
+  --ease-smooth:     cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-bounce:     cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-out:        cubic-bezier(0, 0, 0.2, 1);
+  --ease-spring:     cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --duration-fast:   150ms;
+  --duration-normal: 300ms;
+  --duration-slow:   500ms;
+  --duration-slower: 800ms;
+
+  /* ---- Z-index Scale ---- */
+  --z-base:          1;
+  --z-dropdown:      100;
+  --z-sticky:        200;
+  --z-overlay:       300;
+  --z-modal:         400;
+  --z-toast:         500;
+  --z-widget:        600;
+
+  /* ---- 3D ---- */
+  --perspective:     1200px;
+  --tilt-amount:     8deg;
+}
+
+/* ============================================
+   Section Theme Classes — Unified Premium Dark
+   ============================================ */
+
+.section-light-white,
+.section-light-blue,
+.section-light-gray,
+.section-dark-slate,
+.section-dark-navy {
+  --bg-color:        #030108;
+  --text-color:      #94A3B8;
+  --heading-color:   #FFFFFF;
+  --paragraph-color: #64748B;
+  --card-bg:         rgba(15, 12, 30, 0.55);
+  --card-border:     rgba(255, 255, 255, 0.05);
+  --card-shadow:     0 10px 40px rgba(0, 0, 0, 0.5);
+  --card-shadow-hover: 0 20px 60px rgba(0, 0, 0, 0.8);
+  --glass-bg:        rgba(10, 8, 20, 0.45);
+  --glass-border:    rgba(255, 255, 255, 0.06);
+  --glass-blur:      blur(24px);
+}
