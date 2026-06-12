@@ -233,6 +233,18 @@
   max-width: 300px;
 }
 
+.footer-founder {
+  font-size: var(--fs-small);
+  color: var(--white-90);
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.footer-founder strong {
+  color: var(--cyan-light);
+  font-weight: var(--fw-semibold);
+}
+
 .footer-social {
   display: flex;
   gap: var(--space-md);
