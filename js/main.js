@@ -9,7 +9,6 @@ import confetti from 'canvas-confetti';
 
 import { initNavigation } from './navigation.js';
 import { initAnimations } from './animations.js';
-import { initCalculator } from './calculator.js';
 import { initPortfolio } from './portfolio.js';
 import { initTestimonials } from './testimonials.js';
 import { initFAQ } from './faq.js';
@@ -194,7 +193,6 @@ document.addEventListener('DOMContentLoaded', () => {
   init3DTilt();
   initSpotlight();
   initTechTabs();
-  initCalculator();
   initPortfolio();
   initTestimonials();
   initFAQ();
